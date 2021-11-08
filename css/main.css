@@ -1,0 +1,492 @@
+/*  Спецификация  */
+@font-face {
+	font-family: 'GillSansMT';
+	src: url('../fonts/GillSansMT.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'GillSansMT';
+	src: url('../fonts/GillSansMT-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/GillSansMT-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/GillSansMT-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/GillSansMT-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+		url('../fonts/GillSansMT-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/GillSansMT-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+}
+body {
+	font-size: 16px;
+	font-weight: normal;
+	font-family:GillSansMT ;
+}
+img {
+	object-fit: cover;
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+button,
+button:hover,
+button:focus {
+	font-family: inherit;
+	outline: none;
+	border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #26272d;
+	line-height: 1.2em;
+}
+p {
+	color: #8c8f94;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	font-size: 16px;
+}
+a:hover {
+	text-decoration: none;
+}
+span {
+	display: block;
+}
+.btn {
+	border-radius: 25px;
+	background-color: #267df4;
+	color: #fff;
+	font-weight: normal;
+	padding: 17px 0;
+	display: block;
+	width: 202px;
+	text-align: center;
+	transition: all 0.5s ease;
+}
+
+.btn:hover {
+	background: #5100ff;
+	color: #fff;
+	box-shadow: 0 8px 20px rgb(37 0 249 / 25%);
+}
+
+.btn:active {
+	background: #1c00bf;
+	box-shadow: none
+}
+
+/*  Первый экран  */
+.header {
+	background: url('../img/heaader.jpg') no-repeat center top / cover;
+	padding-top: 58px;
+	overflow: hidden;
+}
+.hamburger {
+	background: url('../img/menu.png') no-repeat;
+	width: 20px;
+	height: 12px;
+	margin-right: 15px;
+	
+}
+.menu__link {
+	margin-right: 40px;
+	color: #26272d;
+	transition: color 0.5s ease;
+}
+.menu__link:hover {
+	color: #8a8f9b;
+	transition: color 0.5s ease;
+}
+.logo {
+	display: block;
+	background: url('../img/logo.png') no-repeat;
+	margin: 0 auto;
+	width: 133px;
+	height: 15px;
+}
+.apple__btn {
+	width: 132px;
+	display: flex;
+	padding: 10px;
+	color: #fff;
+}
+
+.apple__btn::before {
+	content: '';
+	display: block;
+	background: url('../img/Apple_Icon.png') no-repeat;
+	width: 17px;
+	height: 20px;
+	margin: auto 15px;
+}
+.offer {
+	max-width:780px;
+	margin: 118px auto 55px;
+}
+.offer__title {
+	font-size: 62px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.offer__text {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+.btn_offer {
+	color: #33353e;
+	background: none;
+	border-radius: 25px;
+	border: 1px solid #26272d;
+	padding: 10px;
+	margin: auto;
+}
+.btn_offer::before {
+	content: '';
+	display: block;
+	background: url('../img/Play.png') no-repeat;
+	width: 10px;
+	height: 10px;
+	margin-right: 15px;
+}
+.header-iphone {
+	max-width: 60%;
+}
+.info__item_lock {
+	content: '';
+	display: block;
+	background: url('../img/Lock_Icon.png') no-repeat;
+	width: 42px;
+	height: 51px;
+}
+.features {
+	padding-top: 124px;
+	padding-bottom: 38px; 
+}
+.info__title {
+	margin: 45px 0 49px;
+	font-size: 26px;
+}
+.info__text {
+	font-size: 18px;
+	max-width: 505px;
+}
+.info__text:last-child {
+	margin-bottom: 0;
+}
+.info__item_clock::before {
+	content: '';
+	display: block;
+	background: url('../img/Clock_Icon.png') no-repeat;
+	width: 42px;
+	height: 51px;
+}
+.protection {
+	padding: 78px 0 70px;
+}
+.protection-iphone {
+	margin-left: -70px;
+	width: 90%;
+}
+.wraper__title {
+	padding-bottom: 60px;
+	font-size: 42px;
+}
+p.wraper__text:last-child {
+	margin-bottom: 0;
+}
+.wraper__btns {
+	margin-top: 60px;
+}
+.protected__btn_blue {
+	width: 202px;
+	display: flex;
+	padding: 10px 5px 10px 26px;
+	margin-right: 20px;
+}
+.protected__btn_blue::after {
+	content: '';
+	display: block;
+	background: url('../img/Arrow_Icon.svg') no-repeat;
+	width: 13px;
+	height: 12px;
+	margin: auto 15px;
+	margin-left: auto;
+}
+.protected__btn_white {
+	background: #fff;
+	width: 142px;
+	color: #000;
+	border: 1px solid #000;
+	padding: 10px 30px;
+}
+.geolocation {
+	padding: 70px 0 110px;
+}
+.dropbox-btn {
+	background: url('../img/Dropbox_Logo.png')no-repeat;
+	width: 125px;
+	height: 34px;
+	display: inline-block;
+	margin-right: 30px;
+}
+.wraper__subtitle {
+	margin-top: 65px;
+	font-size: 12px;
+    text-transform: uppercase;
+}
+.wraper__btns_partners {
+	margin-top: 30px;
+}
+.evernote-btn {
+	background: url('../img/Evernote_Logo.png')no-repeat;
+	width: 138px;
+	height: 35px;
+	display: inline-block;
+}
+.map {
+	margin-top: 40px;
+	margin-left: 50px;
+	object-fit: contain;
+}
+.footer {
+	padding: 110px 0 150px;
+}
+.footer-logo {
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+	width: 133px;
+	height: 15px;
+	margin-bottom: 25px;
+}
+
+.footer-text{
+	font-size: 14px;
+}
+
+.footer-btn {
+	width: 140px;
+	height: 42px;
+	background: url(../img/Download.png);
+	display: block;
+	margin-top: 28px;
+}
+.footer-title {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.footer-link {
+	color: #909398; 
+}
+.footer-item {
+	margin-top: 8px;	
+}
+@media (max-width: 768px) {
+	.features {
+   		padding-top: 68px;
+    	padding-bottom: 0px;
+    }
+    .wraper__title {
+    	padding-bottom: 30px;
+	}
+	.info__item.info__item_clock {
+    	margin-top: 25px;
+	}
+	.info__title {
+    	margin: 26px 0 23px;
+	}
+}
+/*@media (max-width: 576px) {
+	.features {
+    	padding-top: 67px;
+    }
+    .info__item.info__item_clock {
+    	margin-top: 25px;
+	}
+	.map {
+    	margin-left: 0px;
+    }
+    .protection-iphone {
+    	margin-left: 0px;
+    	width: 100%;
+    }
+}*/
+@media (max-width: 576px) {
+	.map {
+    	margin-left: 0px;
+	}
+	p.wraper__text {
+    width: 260px;
+    }
+    .footer-btn {
+    	margin-bottom: 20px;	
+    }
+    .dropbox-btn {
+    	margin-right: -7px;
+   		background-size: 108px;
+   	}
+   	.evernote-btn {
+    	background-size: 108px;
+    }
+    .footer {
+    padding: 59px 0 48px;
+	}
+	.footer-logo {
+    	background-size: 108px;
+    	margin-bottom: 9px;
+    }
+    .wraper__title {
+    	font-size: 29px;
+    	padding-bottom: 15px;
+    }
+    .wraper__btns {
+    	flex-wrap: wrap;
+    }
+    .protected__btn_blue {
+    	width: 100%;
+    	margin-right: 0px;
+    	margin-bottom: 20px;
+    }
+    .protected__btn_white {
+    	width: 100%;
+    }
+    .protection-iphone {
+    	margin-left: 0px;
+    	width: 100%
+    }
+    .features {
+    	padding-top: 50px;
+    }
+    p.wraper__text {
+    width: 100%;
+	}
+	.info__title {
+    margin: 24px 0 15px;
+    font-size: 26px;
+	}
+	.info__item.info__item_clock {
+   		margin-top: 30px;
+   	}
+   	.btn {
+   		width: 100%;
+   	}
+   	.offer__text {
+    	font-size: 16px;
+    	color: #5D5F63;
+    }
+    .offer__title {
+    	font-size: 30px;
+	}
+	.offer {
+    	margin: 70px auto 55px;
+    }
+}
+
+
+
+
+
+
+
+/*@media (min-width: 768px) {
+	.features {
+   		padding-top: 68px;
+    	padding-bottom: 0px;
+    }
+    .wraper__title {
+    	padding-bottom: 30px;
+	}
+	.info__item.info__item_clock {
+    	margin-top: 25px;
+	}
+	.info__title {
+    	margin: 26px 0 23px;
+	}
+}
+@media (min-width: 576px) {
+	.features {
+    	padding-top: 67px;
+    }
+    .info__item.info__item_clock {
+    	margin-top: 25px;
+	}
+}
+@media (min-width: 280px) {
+	.map {
+    	margin-left: 0px;
+	}
+	p.wraper__text {
+    width: 260px;
+    }
+    .footer-btn {
+    	margin-bottom: 20px;	
+    }
+    .dropbox-btn {
+    	margin-right: -7px;
+   		background-size: 108px;
+   	}
+   	.evernote-btn {
+    	background-size: 108px;
+    }
+    .footer {
+    padding: 59px 0 48px;
+	}
+	.footer-logo {
+    	background-size: 108px;
+    	margin-bottom: 9px;
+    }
+    .wraper__title {
+    	font-size: 29px;
+    	padding-bottom: 15px;
+    }
+    .wraper__btns {
+    	flex-wrap: wrap;
+    }
+    .protected__btn_blue {
+    	width: 100%;
+    	margin-right: 0px;
+    	margin-bottom: 20px;
+    }
+    .protected__btn_white {
+    	width: 100%;
+    }
+    .protection-iphone {
+    	margin-left: 0px;
+    	width: 100%
+    }
+    .features {
+    	padding-top: 50px;
+    }
+    p.wraper__text {
+    width: 100%;
+	}
+	.info__title {
+    margin: 24px 0 15px;
+    font-size: 26px;
+	}
+	.info__item.info__item_clock {
+   		margin-top: 30px;
+   	}
+   	.btn {
+   		width: 100%;
+   	}
+   	.offer__text {
+    	font-size: 16px;
+    	color: #5D5F63;
+    }
+    .offer__title {
+    	font-size: 30px;
+	}
+	.offer {
+    	margin: 70px auto 55px;
+    }
+}*/
